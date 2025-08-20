@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>E-Commerce Product Analyzer</h1>
+        <div class="input-section">
+            <input type="text" id="url" placeholder="Enter Amazon product URL">
+            <button onclick="checkProduct()">Check</button>
+        </div>
+
+        <div id="product-info">
+            <img id="product-image" src="" alt="Product Image" style="display:none;">
+            <h2 id="product-title"></h2>
+            <p>Rating: <span id="rating">N/A</span></p>
+            <p>Review Count: <span id="review-count">N/A</span></p>
+        </div>
+
+        <div class="confidence-section">
+            <p>Confidence:</p>
+            <div id="confidence-bar">
+                <div id="confidence-fill"></div>
+            </div>
+        </div>
+
+        <div class="alerts-section">
+            <h3>Alerts</h3>
+            <ul id="alerts-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
